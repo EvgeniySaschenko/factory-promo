@@ -1,0 +1,59 @@
+extends ../../layout/root
+
+block title 
+	title Заголовок страницы Index
+block meta_k 
+	meta(name="keywords" content="Ключевые слова страницы Index")
+block meta_d 
+	meta(name="description" content="Описание страницы Index")
+
+block main
+	+b.MAIN(role="main").main
+		.container
+			+b.H1.title-page О компании
+			
+			+b.text-box
+				+e.P.item В год провозглашения Турецкой Республики в городе Эдирне в семье, которой было девять детей, родился основатель Farmasi Джевдет Туна.
+
+				+e.P.item Джевдет Туна с отличием закончил Медицинский факультет Франкфуртского университета им. Гете (Германия).
+
+				+e.P.item Доктор Джевдет Туна начал создавать собственные формулы. Тогда же была создана компания Tan Health Company, на которой производились медикаменты, сырье для них, а также другая продукция для сектора здравоохранения.
+
+				+e.P.item Была создана компания Alize Kozmetik и Доктор Туна со своим сыном Хаканом Туна начали совместную работу, сделав своим профилем косметику и средства личной гигиены. Тогда был надежно заложен корпоративный фундамент, ведь лидерские качества Хакана и его успех не вызывали сомнения.
+
+				+e.P.item Tan Health Company и Alize Cosmetics были объединены и приняли свое нынешнее название «Tanalize Kozmetik A.S».
+
+				+e.P.item Начинает свое существование новая продукция под маркой Dr. C. Tuna, которая отличается более эффективными формулами и очень высоким качеством сырья. А сам Доктор Джевдет Туна, даже будучи на пенсии, продолжает посещал фабрику, давать советы, разговаривать с каждым сотрудником, прислушивался к их идеям.
+		
+			+b.tiles
+				+e.H3.title Наши партнёры
+				+e.list
+					+e.item
+						+e.box-img
+							+e.IMG(src="assets/img/partners/artem.png").img
+						+e.text ГАХК "Артем"
+
+					+e.item
+						+e.box-img
+							+e.IMG(src="assets/img/partners/ukr-oboron.png").img
+						+e.text ДК "Укр оборон пром"
+
+					+e.item
+						+e.box-img
+							+e.IMG(src="assets/img/partners/luch.png").img
+						+e.text ДП "ГККБ" "Луч"
+
+					+e.item
+						+e.box-img
+							+e.IMG(src="assets/img/partners/radar.png").img
+						+e.text ПАО "Киевский завод "Радар"
+
+					+e.item
+						+e.box-img
+							+e.IMG(src="assets/img/partners/arsenal.png").img
+						+e.text ПАО "Киевский завод "Арсенал"
+
+
+block pageMod
+	link(rel="stylesheet", href="assets/pages/index.css")
+	script(src="assets/pages/index.js")

@@ -1,0 +1,45 @@
+mixin b-header()
+	+b.HEADER.header 
+		.container
+			+e.row_main
+				+e.col_1
+					+b.A(href="/").logo
+						+e.IMG(src="assets/img/logo-2.png" alt="Лого").img
+						+e.SPAN.text ПрАТ "ВКФ "АС"
+
+				+e.col_2 Производство ракет и турбин
+				
+				+e.col_3
+					+b.contacts-list
+						+e.A(href="tel:044481-26-58").item
+							+b-icon-svg("phone")
+							| (044) 481-26-58
+						+e.A(href="mailto:vatvkfas@ukr.net").item
+							+b-icon-svg("mail")
+							| vatvkfas@ukr.net
+
+
+		+e.row_slider
+			+b.slider-header#slider-header
+				+e.wrapper.swiper-wrapper
+					+e.item.swiper-slide(style="background-image: url(assets/img/header/1.jpg);")
+					+e.item.swiper-slide(style="background-image: url(assets/img/header/2.jpg);")
+					+e.item.swiper-slide(style="background-image: url(assets/img/header/3.jpg);")
+					+e.item.swiper-slide(style="background-image: url(assets/img/header/4.jpg);")
+					+e.item.swiper-slide(style="background-image: url(assets/img/header/5.jpg);")
+				+e.pagination.swiper-pagination
+
+		+e.row_nav
+			.container
+				+b.NAV.nav(class="_header" id="nav__header")
+					+e.UL.list#nav-list_header
+						+e.LI.item
+							+e.A.link(href="/") О компании
+						+e.LI.item
+							+e.A.link(href="about.html") Наше оборудование
+						+e.LI.item
+							+e.A.link(href="about.html") Услуги
+						+e.LI.item
+							+e.A.link(href="about.html") Документы и реквезиты
+						+e.LI.item
+							+e.A.link(href="about.html") Контакты

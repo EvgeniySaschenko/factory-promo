@@ -1,0 +1,29 @@
+mixin b-footer()
+	+b.FOOTER.footer
+		.container
+			+e.row
+				+e.col_contacts
+					+b.A(href="/").logo_footer
+						+e.IMG(src="assets/img/logo-2.png" alt="Лого").img
+						+e.SPAN.text ПрАТ "ВКФ "АС"
+
+					+b.contacts-list
+						+e.A(href="tel:044481-26-58").item
+							+b-icon-svg("phone")
+							| (044) 481-26-58
+
+						+e.A(href="tel:044481-26-58").item
+							+b-icon-svg("fax")
+							| (044) 486-78-76 (факс)
+
+						+e.A(href="mailto:vatvkfas@ukr.net").item
+							+b-icon-svg("mail")
+							| vatvkfas@ukr.net
+
+						+e.item
+							+b-icon-svg("map-marker")
+							| 04050, м.Київ, вул. Юрія Іллєнка 2/10
+
+				+e.col_map
+					+b.map
+						+e.IFRAME(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10159.674370529188!2d30.4842246!3d50.4612406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf349d5d25139bca0!2z0JfQsNCy0L7QtCDQkNGA0YLRkdC8!5e0!3m2!1sru!2sua!4v1582995585927!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="").iframe
